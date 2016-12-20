@@ -7,18 +7,17 @@ public class TileSprite : MonoBehaviour {
 
 	public string Name;
 	public Sprite TileImage;
-	public Resources TileType;
+	public TerrainTypes TileType;
 
 	public TileSprite(){
 		Name = "unset";
 		TileImage = new Sprite ();
-		TileType = Resources.unset;
+		TileType = TerrainTypes.unset;
 	}
 
-	public TileSprite(string name, Sprite tileImage, Resources tile){
+	public TileSprite(string name, Sprite tileImage, TerrainTypes tile){
 		Name = name;
 		TileImage = tileImage;
 		TileType = tile;
 	}
-
 }

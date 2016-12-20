@@ -30,7 +30,7 @@ public class TileEngine : MonoBehaviour {
 	}
 
 	//Find a certian tile in the tilemap
-	private TileSprite FindTile(Resources tile){
+	private TileSprite FindTile(TerrainTypes tile){
 
 		foreach (TileSprite tileSprite in TileSprites){
 
@@ -43,7 +43,7 @@ public class TileEngine : MonoBehaviour {
 	private void DefaultTiles(){
 		for (var y = 0; y < MapSize.y - 1; y++){
 			for (var x = 0; x < MapSize.x - 1; x++){
-				_map [x, y] = new TileSprite ("Unset", DefaultImage, Resources.unset);
+				_map [x, y] = new TileSprite ("Unset", DefaultImage, TerrainTypes.unset);
 			}
 		}
 	}

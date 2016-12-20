@@ -2,5 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Resources {unset, iron, gold, silver, cobalt, nickel, titanium, magnesium, sodium, phosphorus, water, oxygen, nitrogen};
+public enum Biomes {unset, GrassLand, Lava, Forest, Tundra, Ocean};
+public enum TerrainTypes {unset, Grass, Snow, Water, Lava};
+public enum TerrainnObjects {unset, Rock, Tree, Ice, Bush};
 
