@@ -12,7 +12,7 @@ public class Resource : MonoBehaviour {
 	public Resources type;
 	public int value;
 	public int weight;
-	public Sprite[] resourceTexture;
+	public Sprite resourceTexture;
 
 	// Use this for initialization
 	public Resource(Resources type) {
